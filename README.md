@@ -1,0 +1,11 @@
+# RECIPE_MASTER_2026
+
+Un projet basé sur une architecture MVC procédurale
+
+## Installation
+
+- Lancer Wamp/Mamp/Xamp...
+- charger la db_remplie sur votre serveur mySQL
+- Placez le dossier complet dans le dossier racine de votre serveur web (htdocs, www,...)
+
+- Tester la via localhost/path_du_dossier.
