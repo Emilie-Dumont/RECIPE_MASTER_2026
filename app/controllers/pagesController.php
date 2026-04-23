@@ -7,6 +7,7 @@ function homeAction(PDO $conn)
 {
     include_once '../app/models/recipesModel.php';
     $randomRecipe = RecipesModel\findOneByRand($conn);
+    $popularRecipes = RecipesModel\FindAllPopulars($conn);
 
 
     global $title, $content;

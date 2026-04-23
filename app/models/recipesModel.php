@@ -13,3 +13,13 @@ function findOneByRand(PDO $conn): array
     $rs = $conn->query($sql);
     return $rs->fetch(PDO::FETCH_ASSOC);
 }
+//Envoyez à la vue une variable $recipes (avec les 3 dernières) depuisfindAllPopulars()
+function FindAllPopulars(PDO $conn): array
+{
+    $sql = "SELECT*
+            FROM recipes
+            ORDER BY created_at DESC
+            LIMIT 3;";
+    $rs = $conn->query($sql);
+    return $rs->fetchAll(PDO::FETCH_ASSOC);
+}
